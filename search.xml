@@ -1,21 +1,301 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+    <title>上手电能汽车的基础知识</title>
+    <url>/basic-knowledge-of-electric-car-charging/</url>
+    <content><![CDATA[<p>电能基础知识、电池容量、百公里电耗、充电方式、价格、常见保养常识。</p>
+<a id="more"></a>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h2 id="电能相关基础知识"><a href="#电能相关基础知识" class="headerlink" title="电能相关基础知识"></a>电能相关基础知识</h2><h3 id="单相电-amp-三相电"><a href="#单相电-amp-三相电" class="headerlink" title="单相电 &amp; 三相电"></a>单相电 &amp; 三相电</h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>单相电</th>
+<th>三相电</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>用途</td>
+<td>家用</td>
+<td>工业</td>
+</tr>
+<tr>
+<td>电压</td>
+<td>220V</td>
+<td>380V</td>
+</tr>
+<tr>
+<td>构成</td>
+<td>1根火线，1根零线</td>
+<td>3 根火线</td>
+</tr>
+</tbody></table>
+<h3 id="功率-电压-电流-电阻"><a href="#功率-电压-电流-电阻" class="headerlink" title="功率 电压 电流 电阻"></a>功率 电压 电流 电阻</h3><p>电功的国际单位是J，常用单位kWh（千瓦时，俗称度），1kWh=3.6×10e6J</p>
+<h3 id="快充-amp-慢充"><a href="#快充-amp-慢充" class="headerlink" title="快充 &amp; 慢充"></a>快充 &amp; 慢充</h3><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>快充</th>
+<th>慢充</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>类型</td>
+<td>直流电</td>
+<td>交流电</td>
+</tr>
+<tr>
+<td>功率</td>
+<td>30KW - 100KW</td>
+<td>2.2kw - 22kw</td>
+</tr>
+<tr>
+<td>电压</td>
+<td>500V、780V</td>
+<td>220V 、 380V</td>
+</tr>
+<tr>
+<td>电流</td>
+<td>500V、780V</td>
+<td>220V 、 380V</td>
+</tr>
+</tbody></table>
+<p>快充（一般是直流电）：</p>
+<p>直流充电造价较高，一般设置在大型充电站或停车场，常用的一般为60KW-90KW之间，特斯拉的超级快充即为直流充电，功率在120KW以上。</p>
+<p>慢充（一般是交流电）：</p>
+<p>通过220V 10A/16A家用插座。国内普通家庭用电多为220V 40A电表，插座多为10A或16A，通过TESLA随车带的充电线配和相应插头链接并通过中控选择充电电流，即可充电。220V10A每小时充电2.2kwh，可行驶7-10公里，从没电到完全充满需要40小时左右；220V16A每小时充电3.52kwh，可行驶10-18公里，从没电到完全充满需要25小时左右。</p>
+<h2 id="电池容量和续航"><a href="#电池容量和续航" class="headerlink" title="电池容量和续航"></a>电池容量和续航</h2><table>
+<thead>
+<tr>
+<th>属性</th>
+<th>Tesla M3</th>
+<th>蔚来 ES6</th>
+<th>小鹏 P7</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>电池容量</td>
+<td>55-85 kW·h</td>
+<td><a href="https://www.nio.cn/es6-mileage-calculator">70-100 kW·h</a></td>
+<td>70.8 kW·h</td>
+</tr>
+<tr>
+<td>续航</td>
+<td>445-668 km</td>
+<td>610 km</td>
+<td>586 km</td>
+</tr>
+<tr>
+<td>百公里能耗</td>
+<td>12.4 kWh</td>
+<td>22.23 kWh</td>
+<td>12.5 kWh</td>
+</tr>
+<tr>
+<td>能量密度</td>
+<td>153.2 Wh/kg</td>
+<td>170Wh/kg</td>
+<td>170 Wh/kg</td>
+</tr>
+</tbody></table>
+<p>注意：数据来自网络，可能会不准确，仅供参考</p>
+<p>综合工况电能消耗量：12.4 kW·h / 100km<br>电能当量燃料消耗量：1.40 L / 100km</p>
+<p>美国规定电池包容量大于或等于16kwh可以拿满7500美元的联邦补贴，所以美国市场的纯电动汽车基本都会超过16kwh</p>
+<p>对比汽油车</p>
+<p>奥迪 A4L 65升<br>宝马 3系 60升 （60 升，官方综合油耗(L/100km): 7.2 ，95号汽油为8.21元 /升）<br>百公里油耗 8L，汽油价格 5.5元/L 左右。</p>
+<h2 id="充电方式及价格"><a href="#充电方式及价格" class="headerlink" title="充电方式及价格"></a>充电方式及价格</h2><h3 id="公共充电站"><a href="#公共充电站" class="headerlink" title="公共充电站"></a>公共充电站</h3><p>充电费用一般包含：电费 + 服务费 + 停车费（取决于停车场是否收费）。</p>
+<ul>
+<li>电费 + 服务费：一般在 1 ~ 2 元/度</li>
+<li>服务费很多充电站都会有折扣</li>
+<li>停车费差异较大，得看具体场所</li>
+</ul>
+<p>快充和慢充价格一般差不多，都是按充电度数来计费的，慢充可能需要的时间更长，充同样的电量，停车费要花的多一些。</p>
+<h3 id="家用充电桩"><a href="#家用充电桩" class="headerlink" title="家用充电桩"></a>家用充电桩</h3><p>安装完充电桩，充电产生的费用就只有电费了。民用电一般 0.5 元/度，工业用电一般 1 元/度</p>
+<p>随身充：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>10A</th>
+<th>16A</th>
+<th>32A</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>充电速度</td>
+<td>13 KM/h</td>
+<td>20 KM/h</td>
+<td>40 KM/h</td>
+</tr>
+<tr>
+<td>功率</td>
+<td>2.2 KW</td>
+<td>3.6 KW</td>
+<td>7.2 KW</td>
+</tr>
+</tbody></table>
+<h3 id="充电速度"><a href="#充电速度" class="headerlink" title="充电速度"></a>充电速度</h3><p><code>车辆电池容量 / 功率 = 充电时间</code></p>
+<ol>
+<li>tesla 自建超级充电桩<ul>
+<li>V1 的充电速度是 300-400km/小时，75千瓦</li>
+<li>V2 的充电速度是 800km/小时，125kW (两个充电桩共享 145 kW 功率)</li>
+<li>V3 的充电速度在 1200km/小时，250千瓦</li>
+</ul>
+</li>
+<li>国家电网的充电服务站点<ul>
+<li>国家电网在高速休息区的大概在 400KM/小时左右</li>
+</ul>
+</li>
+<li>三方公司的充电服务站点，和国家电网服务站点差不多。</li>
+<li>自家安装充电桩，参考 tesla 官方家用充电桩<ul>
+<li>单相 220v，功率在 7kw。每小时约 45km</li>
+<li>三相 380v，功率在 11kw。每小时约 65km</li>
+</ul>
+</li>
+</ol>
+<h2 id="电能车的常见问题"><a href="#电能车的常见问题" class="headerlink" title="电能车的常见问题"></a>电能车的常见问题</h2><ul>
+<li>锂电池要避免过充和过放，最好随用随充。</li>
+<li>无需纠结直流/交流更伤电池的事情，其实差的没那么大。</li>
+</ul>
 ]]></content>
+      <categories>
+        <category>生活</category>
+        <category>汽车</category>
+      </categories>
+      <tags>
+        <tag>充电</tag>
+        <tag>电能</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hexo 博客管理图片</title>
+    <url>/hexo-picture-organization/</url>
+    <content><![CDATA[<p>整理 Hexo 展示图片的各种方式，以及从长期维护，方便易用的角度介绍一下我个人总结的最佳实践。</p>
+<a id="more"></a>
+
+<h2 id="关键知识"><a href="#关键知识" class="headerlink" title="关键知识"></a>关键知识</h2><h3 id="post-asset-folder"><a href="#post-asset-folder" class="headerlink" title="post_asset_folder"></a>post_asset_folder</h3><p>通过 <a href="https://hexo.io/zh-cn/docs/asset-folders.html">文档</a> 查看 <code>post_asset_folder</code> 的详细介绍。</p>
+<p>简单总结：</p>
+<p>post_asset_folder = false</p>
+<p><code>![](/images/image.jpg)</code> 这种方式引用图片都可以正常 work，</p>
+<p>post_asset_folder = true</p>
+<p><code>![](/images/image.jpg)</code> 这种方式引用图片，仅在文章中显示，首页/归档页将不再会显示图片，需要使用 标签插件 引用图片，才能正常显示。</p>
+<h3 id="引用图片的方式"><a href="#引用图片的方式" class="headerlink" title="引用图片的方式"></a>引用图片的方式</h3><ol>
+<li><a href="https://hexo.io/zh-cn/docs/tag-plugins#Image">在文章中插入指定大小的图片。</a><br><code>&#123;% img [class names] /path/to/image [width] [height] '"title text" "alt text"' %&#125;</code><br>例如: <code>&#123;% img https://img.ifnnn.cn/b65dc1f4245a9a1230e78bac21f5ee6f.png?imageView2/2/w/640 500 400 %&#125;</code></li>
+</ol>
+<ol start="2">
+<li><p><a href="https://hexo.io/zh-cn/docs/asset-folders#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BC%95%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6">引用文章的资源</a></p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#123;% asset_path filename %&#125;</span><br><span class="line">&#123;% asset_img [class names] slug [width] [height] [title text [alt text]] %&#125;</span><br><span class="line">&#123;% asset_link filename [title] [escape] %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><a href="https://hexo.io/zh-cn/docs/tag-plugins#Embed-image">关于 asset_img 的详细介绍</a></p>
+</li>
+</ol>
+<h3 id="fancybox-点击查看大图"><a href="#fancybox-点击查看大图" class="headerlink" title="fancybox (点击查看大图)"></a>fancybox (点击查看大图)</h3><p><a href="https://github.com/theme-next/theme-next-fancybox3">https://github.com/theme-next/theme-next-fancybox3</a></p>
+<h3 id="图片压缩"><a href="#图片压缩" class="headerlink" title="图片压缩"></a>图片压缩</h3><ul>
+<li>macOS: <a href="https://imageoptim.com/command-line.html">https://imageoptim.com/command-line.html</a></li>
+<li>Windows: <a href="https://nikkhokkho.sourceforge.io/static.php?page=FileOptimizer">https://nikkhokkho.sourceforge.io/static.php?page=FileOptimizer</a><ul>
+<li>下载地址: <a href="https://sourceforge.net/projects/nikkhokkho/files/FileOptimizer/">https://sourceforge.net/projects/nikkhokkho/files/FileOptimizer/</a></li>
+</ul>
+</li>
+<li>online: <a href="https://img.top/">https://img.top/</a></li>
+<li>online: <a href="https://squoosh.app/">https://squoosh.app/</a></li>
+</ul>
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
+<li><p>博客的源代码托管在 github，原则上不应该将大量的图片上传至 git 仓库，所以推荐采用 cdn 外链的方式插入图片。</p>
+</li>
+<li><p>虽然目前的图片cdn 都有魔法参数支持压缩、裁剪，但是原图尽量还是在不失真的前提下，压缩一下，节省体积。具体压缩方法可自由选择。</p>
+</li>
+<li><p>每个文件都有一个 md5 值，就将所有文章中使用的图片全部放在一个文件夹中，然后将文件名改为其 md5 值，保留原始后缀，然后将文件夹中的图片和 cdn 的某个目录保持同步。这样做的好处。</p>
+<ul>
+<li>这样管理很简单、不容易忘，这个文件夹也可以同步到百度云或者其他网盘中，方便备份。</li>
+<li>方便换 cdn 服务商。如果更换 cdn 厂商，只需同步下这个文件夹，全局替换下图片 host + prefix 即可。</li>
+<li>可以随时检查文件名和 md5 值是否一致，以确定是否是原图。</li>
+</ul>
+</li>
+</ul>
+]]></content>
+      <tags>
+        <tag>图片</tag>
+        <tag>Hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>说说 Tesla Model3</title>
+    <url>/talk-about-tesla-model3/</url>
+    <content><![CDATA[<p>购车流程、费用、保险、充电、加装配置。</p>
+<a id="more"></a>
+
+<h2 id="购车流程"><a href="#购车流程" class="headerlink" title="购车流程"></a>购车流程</h2><p>买一辆 tesla 相对比较简单，大概流程如下。</p>
+<h3 id="试驾"><a href="#试驾" class="headerlink" title="试驾"></a>试驾</h3><p>买 tesla 一般去的销售中心是官方直售店，和传统 4S 店还是有比较大区别的。</p>
+<p>就近找一家 tesla 销售店即可，tesla 目前只有直售店，直售店主要给你介绍车型、约试驾、确定价格（可分期）。</p>
+<p>建议确定买车前，自己试驾一下，和销售聊一聊，多了解一下想买的车。</p>
+<p>经过试驾以及和销售的沟通，我感受到的是：</p>
+<ol>
+<li>tesla 是非常重视安全的车，在主动安全和被动安全方面都做得很好。</li>
+<li>在自动辅助驾驶和电池管理技术上有很大的技术优势。</li>
+</ol>
+<h3 id="下单"><a href="#下单" class="headerlink" title="下单"></a>下单</h3><p>如果是买全新车，据我所知，基本上没什么可谈的空间，全国官网统一价，官网直接下单和店里下单没啥区别。</p>
+<p>如果考虑准新车，可以加一下销售的微信，朋友圈偶尔会放一些官方回收的二手车，性价比还对不错。</p>
+<p>下单的过程中，有一点需要注意。tesla 有个长期推荐活动，如果使用了 tesla 车主的推荐码，推荐人和被推荐人都可以免费获得 1500km 的超级充电额度。</p>
+<p>如果你要求自己网上下单的话，销售也会以帮忙确认推荐是否成功提交为由，给你他们直售店的专属销售链接，让你填完提交订单后，等他们确认后，再付 1000 块的定金。这样他可以保证这个订单关联了他们店的信息，也可以保证我们自己的免费充电额度成功提交。</p>
+<p>交完 1000 块的定金，就会拉一个交付群，和交付专员确定提车时间即可。提车那天会让你补齐车款。</p>
+<h3 id="提车"><a href="#提车" class="headerlink" title="提车"></a>提车</h3><p>北京的交付中心只有一个，在亦庄。</p>
+<p>进门拿一个流程单，先去确认车辆指标，完事再交车款（可以刷信用卡，没有手续费），然后再去买保险（多选一，价格基本一样），等验车，出临牌（送一个帮上车牌的服务，当场可以约挂正式牌时间，地点多选一，在 app 提交即可）。</p>
+<p>最后需要听一场车辆讲解的讲堂，完事就可以开车走人了。</p>
+<h3 id="上牌"><a href="#上牌" class="headerlink" title="上牌"></a>上牌</h3><p>到了约定上牌的把车开过去，拍照验完车，等着出牌就行，有人帮忙跑整个流程。早点去，大概一上午就能拿到牌。</p>
+<p>总的来说，非常省心，不用提防、和销售斗智斗勇，非常适合不爱操心的“懒人”。</p>
+<p>BTW,</p>
+<p>使用我的引荐链接购买全新 Tesla，您可获得 1,500 公里的免费超级充电额度：</p>
+<p><a href="https://www.tesla.cn/referral/i96646">https://www.tesla.cn/referral/i96646</a></p>
+<h2 id="费用"><a href="#费用" class="headerlink" title="费用"></a>费用</h2><p>费用相对比较透明简单，官方网站上选完配置直接出价格。</p>
+<p>价格 291800 CNY，国家补贴 20250 CNY，最终价格 271550 CNY</p>
+<p>tesla 除了收取这个费用，别的其他费用就真没有了。</p>
+<h2 id="保险"><a href="#保险" class="headerlink" title="保险"></a>保险</h2><p>车险目前已经非常透明了，线上和线下价格差不多，不同的渠道顶多会有一些返点。</p>
+<p>建议还是在交付中心直接买保险，除非自己有比较好的渠道，如果自己找渠道会比较浪费时间，而且有些保险公司是不保 tesla 的。</p>
+<p>在交付中心买保险，也会有一些礼品赠送，不同时间买车礼品应该也会不一样，我领到的是：一个实体钥匙、前备箱垫。</p>
+<p>说一下保险费：商业险 (6121.31) + 交强险 （950）</p>
+<p>商业险包括：</p>
+<ul>
+<li>车损，保额就是车价（271550），费用 4306.07</li>
+<li>三者，保额上的 150w，费用 1166.32</li>
+<li>划痕险，保额上的 1w，费用 648.92</li>
+</ul>
+<p>PS： 2020年9月16日 费改之后，车损险包含：自燃、涉水、盗抢、无三方、不计免赔、车损本身</p>
+<h2 id="加装配置"><a href="#加装配置" class="headerlink" title="加装配置"></a>加装配置</h2><ul>
+<li>后排座椅自动加热</li>
+<li>自动辅助驾驶：BAP -&gt; EAP -&gt; FSD</li>
+<li>车膜（前后挡 + 4 个门）</li>
+<li>遮光罩 + 反光布</li>
+<li>随身充</li>
+<li>车衣、改色膜</li>
+<li>音响激活</li>
+<li>脚垫 + 座垫 + 前后备箱垫</li>
+<li>电动前、后备箱</li>
+<li>电吸门</li>
+<li>换大的车轮毂</li>
+<li>空调滤芯</li>
+</ul>
+<h2 id="用车提示"><a href="#用车提示" class="headerlink" title="用车提示"></a>用车提示</h2><p>买完车客服小姐姐的推过来的信息。</p>
+<blockquote><p>感谢您与我们一起加速世界向可持续能源的转变，接下来有一些注意事项和您分享：<br>1、日常用车能耗大小的排序是：座椅加热&lt;夏天使用空调&lt;开窗户开车&lt;冬天使用空调&lt;冬天起步&lt;急加速&lt;持续高速；<br>2、您的实际续航在车辆大屏幕左下角第三个图标“箭头”里的能量里显示，请您参考这里的公里数；<br>3、建议您的爱车每两年或者每四万公里做一次检测；每一年更换一次空调滤芯、每两年更换一次干燥剂和制动液，每四年更换一下电池冷却液，再就是春夏（2.9bar）和秋冬（3.1bar）交际的时候留意胎压变化，及时调整胎压；<br>4、您提车后会由北京五个服务中心为您提供服务。4009100707是我们的24小时客服～感谢您这段时间的配合和支持呀</p>
+</blockquote>
+
+<h2 id="充电"><a href="#充电" class="headerlink" title="充电"></a>充电</h2><p>关于充电，作为一名新手要了解的信息相对还有点多，单独分开总结一篇。</p>
+<a href="/basic-knowledge-of-electric-car-charging/" title="上手电能汽车的基础知识">上手电能汽车的基础知识</a>
+
+<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>使用我的引荐链接购买全新 Tesla，您可获得 1,500 公里的免费超级充电额度：</p>
+<p><a href="https://www.tesla.cn/referral/i96646">https://www.tesla.cn/referral/i96646</a></p>
+]]></content>
+      <categories>
+        <category>生活</category>
+        <category>汽车</category>
+      </categories>
+      <tags>
+        <tag>tesla</tag>
+        <tag>model3</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>欢迎来到我的博客</title>
+    <url>/welcome/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>

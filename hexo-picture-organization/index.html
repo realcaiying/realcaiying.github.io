@@ -26,29 +26,35 @@
     var CONFIG = {"hostname":"blog.caiying.me","root":"/","images":"/images","scheme":"Pisces","version":"8.0.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Ying&#39;s Blog">
-<meta property="og:url" content="http://blog.caiying.me/index.html">
+  <meta name="description" content="整理 Hexo 展示图片的各种方式，以及从长期维护，方便易用的角度介绍一下我个人总结的最佳实践。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo 博客管理图片">
+<meta property="og:url" content="http://blog.caiying.me/hexo-picture-organization/index.html">
 <meta property="og:site_name" content="Ying&#39;s Blog">
+<meta property="og:description" content="整理 Hexo 展示图片的各种方式，以及从长期维护，方便易用的角度介绍一下我个人总结的最佳实践。">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-11-16T02:28:15.000Z">
+<meta property="article:modified_time" content="2020-11-18T01:54:24.132Z">
 <meta property="article:author" content="Ying Cai">
+<meta property="article:tag" content="图片">
+<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://blog.caiying.me/">
+<link rel="canonical" href="http://blog.caiying.me/hexo-picture-organization/">
 
 
 <script class="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'en'
   };
 </script>
 
-  <title>Ying's Blog</title>
+  <title>Hexo 博客管理图片 | Ying's Blog</title>
   
 
 
@@ -197,7 +203,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -210,6 +216,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <section class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%B3%E9%94%AE%E7%9F%A5%E8%AF%86"><span class="nav-number">1.</span> <span class="nav-text">关键知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#post-asset-folder"><span class="nav-number">1.1.</span> <span class="nav-text">post_asset_folder</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%BC%95%E7%94%A8%E5%9B%BE%E7%89%87%E7%9A%84%E6%96%B9%E5%BC%8F"><span class="nav-number">1.2.</span> <span class="nav-text">引用图片的方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#fancybox-%E7%82%B9%E5%87%BB%E6%9F%A5%E7%9C%8B%E5%A4%A7%E5%9B%BE"><span class="nav-number">1.3.</span> <span class="nav-text">fancybox (点击查看大图)</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9"><span class="nav-number">1.4.</span> <span class="nav-text">图片压缩</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9C%80%E4%BD%B3%E5%AE%9E%E8%B7%B5"><span class="nav-number">2.</span> <span class="nav-text">最佳实践</span></a></li></ol></div>
         </section>
         <!--/noindex-->
 
@@ -267,205 +274,12 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner post posts-expand">
       
 
       
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://blog.caiying.me/welcome/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ying Cai">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ying's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-              <span class="post-sticky-flag" title="Sticky">
-                <i class="fa fa-thumbtack"></i>
-              </span>
-            <a href="/welcome/" class="post-title-link" itemprop="url">欢迎来到我的博客</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-12-19 09:34:59" itemprop="dateCreated datePublished" datetime="2019-12-19T09:34:59+08:00">2019-12-19</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2020-11-16 13:51:16" itemprop="dateModified" datetime="2020-11-16T13:51:16+08:00">2020-11-16</time>
-      </span>
 
   
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/welcome/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="welcome/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://blog.caiying.me/basic-knowledge-of-electric-car-charging/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ying Cai">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ying's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/basic-knowledge-of-electric-car-charging/" class="post-title-link" itemprop="url">上手电能汽车的基础知识</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-11-18 09:51:02" itemprop="dateCreated datePublished" datetime="2020-11-18T09:51:02+08:00">2020-11-18</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2020-11-22 22:08:40" itemprop="dateModified" datetime="2020-11-22T22:08:40+08:00">2020-11-22</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%94%9F%E6%B4%BB/%E6%B1%BD%E8%BD%A6/" itemprop="url" rel="index"><span itemprop="name">汽车</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/basic-knowledge-of-electric-car-charging/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="basic-knowledge-of-electric-car-charging/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>电能基础知识、电池容量、百公里电耗、充电方式、价格、常见保养常识。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/basic-knowledge-of-electric-car-charging/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
 
 
 <div class="post-block">
@@ -485,10 +299,9 @@
       <meta itemprop="name" content="Ying's Blog">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/hexo-picture-organization/" class="post-title-link" itemprop="url">Hexo 博客管理图片</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Hexo 博客管理图片
+        </h1>
 
         <div class="post-meta-container">
           <div class="post-meta">
@@ -532,16 +345,49 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>整理 Hexo 展示图片的各种方式，以及从长期维护，方便易用的角度介绍一下我个人总结的最佳实践。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/hexo-picture-organization/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
+        <p>整理 Hexo 展示图片的各种方式，以及从长期维护，方便易用的角度介绍一下我个人总结的最佳实践。</p>
+<a id="more"></a>
+
+<h2 id="关键知识"><a href="#关键知识" class="headerlink" title="关键知识"></a>关键知识</h2><h3 id="post-asset-folder"><a href="#post-asset-folder" class="headerlink" title="post_asset_folder"></a>post_asset_folder</h3><p>通过 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders.html">文档</a> 查看 <code>post_asset_folder</code> 的详细介绍。</p>
+<p>简单总结：</p>
+<p>post_asset_folder = false</p>
+<p><code>![](/images/image.jpg)</code> 这种方式引用图片都可以正常 work，</p>
+<p>post_asset_folder = true</p>
+<p><code>![](/images/image.jpg)</code> 这种方式引用图片，仅在文章中显示，首页/归档页将不再会显示图片，需要使用 标签插件 引用图片，才能正常显示。</p>
+<h3 id="引用图片的方式"><a href="#引用图片的方式" class="headerlink" title="引用图片的方式"></a>引用图片的方式</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/tag-plugins#Image">在文章中插入指定大小的图片。</a><br><code>&#123;% img [class names] /path/to/image [width] [height] '"title text" "alt text"' %&#125;</code><br>例如: <code>&#123;% img https://img.ifnnn.cn/b65dc1f4245a9a1230e78bac21f5ee6f.png?imageView2/2/w/640 500 400 %&#125;</code></li>
+</ol>
+<ol start="2">
+<li><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/asset-folders#%E7%9B%B8%E5%AF%B9%E8%B7%AF%E5%BE%84%E5%BC%95%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E6%8F%92%E4%BB%B6">引用文章的资源</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path filename %&#125;</span><br><span class="line">&#123;% asset_img [class names] slug [width] [height] [title text [alt text]] %&#125;</span><br><span class="line">&#123;% asset_link filename [title] [escape] %&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/tag-plugins#Embed-image">关于 asset_img 的详细介绍</a></p>
+</li>
+</ol>
+<h3 id="fancybox-点击查看大图"><a href="#fancybox-点击查看大图" class="headerlink" title="fancybox (点击查看大图)"></a>fancybox (点击查看大图)</h3><p><a target="_blank" rel="noopener" href="https://github.com/theme-next/theme-next-fancybox3">https://github.com/theme-next/theme-next-fancybox3</a></p>
+<h3 id="图片压缩"><a href="#图片压缩" class="headerlink" title="图片压缩"></a>图片压缩</h3><ul>
+<li>macOS: <a target="_blank" rel="noopener" href="https://imageoptim.com/command-line.html">https://imageoptim.com/command-line.html</a></li>
+<li>Windows: <a target="_blank" rel="noopener" href="https://nikkhokkho.sourceforge.io/static.php?page=FileOptimizer">https://nikkhokkho.sourceforge.io/static.php?page=FileOptimizer</a><ul>
+<li>下载地址: <a target="_blank" rel="noopener" href="https://sourceforge.net/projects/nikkhokkho/files/FileOptimizer/">https://sourceforge.net/projects/nikkhokkho/files/FileOptimizer/</a></li>
+</ul>
+</li>
+<li>online: <a target="_blank" rel="noopener" href="https://img.top/">https://img.top/</a></li>
+<li>online: <a target="_blank" rel="noopener" href="https://squoosh.app/">https://squoosh.app/</a></li>
+</ul>
+<h2 id="最佳实践"><a href="#最佳实践" class="headerlink" title="最佳实践"></a>最佳实践</h2><ul>
+<li><p>博客的源代码托管在 github，原则上不应该将大量的图片上传至 git 仓库，所以推荐采用 cdn 外链的方式插入图片。</p>
+</li>
+<li><p>虽然目前的图片cdn 都有魔法参数支持压缩、裁剪，但是原图尽量还是在不失真的前提下，压缩一下，节省体积。具体压缩方法可自由选择。</p>
+</li>
+<li><p>每个文件都有一个 md5 值，就将所有文章中使用的图片全部放在一个文件夹中，然后将文件名改为其 md5 值，保留原始后缀，然后将文件夹中的图片和 cdn 的某个目录保持同步。这样做的好处。</p>
+<ul>
+<li>这样管理很简单、不容易忘，这个文件夹也可以同步到百度云或者其他网盘中，方便备份。</li>
+<li>方便换 cdn 服务商。如果更换 cdn 厂商，只需同步下这个文件夹，全局替换下图片 host + prefix 即可。</li>
+<li>可以随时检查文件名和 md5 值是否一致，以确定是否是原图。</li>
+</ul>
+</li>
+</ul>
+
     </div>
 
     
@@ -549,114 +395,25 @@
     
 
     <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
+          <div class="post-tags">
+              <a href="/tags/%E5%9B%BE%E7%89%87/" rel="tag"># 图片</a>
+              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+          </div>
 
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="http://blog.caiying.me/talk-about-tesla-model3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Ying Cai">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Ying's Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/talk-about-tesla-model3/" class="post-title-link" itemprop="url">说说 Tesla Model3</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-11-15 23:01:01" itemprop="dateCreated datePublished" datetime="2020-11-15T23:01:01+08:00">2020-11-15</time>
-    </span>
-      <span class="post-meta-item">
-        <span class="post-meta-item-icon">
-          <i class="far fa-calendar-check"></i>
-        </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 2020-11-20 09:44:42" itemprop="dateModified" datetime="2020-11-20T09:44:42+08:00">2020-11-20</time>
-      </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%94%9F%E6%B4%BB/" itemprop="url" rel="index"><span itemprop="name">生活</span></a>
-        </span>
-          , 
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%94%9F%E6%B4%BB/%E6%B1%BD%E8%BD%A6/" itemprop="url" rel="index"><span itemprop="name">汽车</span></a>
-        </span>
-    </span>
-
-  
-  
-  <span class="post-meta-item">
-    
-      <span class="post-meta-item-icon">
-        <i class="far fa-comment"></i>
-      </span>
-      <span class="post-meta-item-text">Disqus: </span>
-    
-    <a title="disqus" href="/talk-about-tesla-model3/#disqus_thread" itemprop="discussionUrl">
-      <span class="post-comments-count disqus-comment-count" data-disqus-identifier="talk-about-tesla-model3/" itemprop="commentCount"></span>
-    </a>
-  </span>
-  
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>购车流程、费用、保险、充电、加装配置。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/talk-about-tesla-model3/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
         
-      
-    </div>
 
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/talk-about-tesla-model3/" rel="prev" title="说说 Tesla Model3">
+                  <i class="fa fa-chevron-left"></i> 说说 Tesla Model3
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/basic-knowledge-of-electric-car-charging/" rel="next" title="上手电能汽车的基础知识">
+                  上手电能汽车的基础知识 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
   </article>
 </div>
@@ -665,11 +422,15 @@
 
 
 
-  
-
-
 
       
+    
+  <div class="comments">
+    <div id="disqus_thread">
+      <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+    </div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -784,6 +545,26 @@
   }
   // defer loading until the whole page loading is completed
   window.addEventListener('load', loadCount, false);
+</script>
+<script>
+  var disqus_config = function() {
+    this.page.url = "http://blog.caiying.me/hexo-picture-organization/";
+    this.page.identifier = "hexo-picture-organization/";
+    this.page.title = "Hexo 博客管理图片";
+    };
+  NexT.utils.loadComments('#disqus_thread', () => {
+    if (window.DISQUS) {
+      DISQUS.reset({
+        reload: true,
+        config: disqus_config
+      });
+    } else {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://realcaiying.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', '' + +new Date());
+      (d.head || d.body).appendChild(s);
+    }
+  });
 </script>
 
 </body>
