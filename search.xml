@@ -298,4 +298,123 @@
     <url>/welcome/</url>
     <content><![CDATA[]]></content>
   </entry>
+  <entry>
+    <title>常用电子设备电池相关基础知识</title>
+    <url>/basic-knowledge-of-battery-for-common-electronic-equipment/</url>
+    <content><![CDATA[<p>电脑、手机电池的概览、发展、常见设备的容量和充电速度。</p>
+<a id="more"></a>
+
+
+
+<h2 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h2><p>P（功率）＝U（电压） × I（电流）</p>
+<h2 id="充电速度：从5W到125W"><a href="#充电速度：从5W到125W" class="headerlink" title="充电速度：从5W到125W"></a>充电速度：从5W到125W</h2><table>
+<thead>
+<tr>
+<th>时间</th>
+<th>备注</th>
+<th>功率</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>20世纪</td>
+<td>普通充电设备</td>
+<td>5V/0.5A</td>
+</tr>
+<tr>
+<td>2007</td>
+<td>iphone</td>
+<td>5V/1A</td>
+</tr>
+<tr>
+<td>2010</td>
+<td>USB BC 1.2 协议</td>
+<td>5V/1.5A</td>
+</tr>
+<tr>
+<td>2011</td>
+<td>Galaxy Note</td>
+<td>5.3V/2A</td>
+</tr>
+<tr>
+<td>2013</td>
+<td>高通QC1.0协议</td>
+<td>5V/2A</td>
+</tr>
+</tbody></table>
+<p><a href="http://www.gsm88.com/newsinfo-488.html">http://www.gsm88.com/newsinfo-488.html</a></p>
+<p><a href="https://www.sohu.com/a/165349266_114760">https://www.sohu.com/a/165349266_114760</a></p>
+<h2 id="电池容量"><a href="#电池容量" class="headerlink" title="电池容量"></a>电池容量</h2><table>
+<thead>
+<tr>
+<th>设备</th>
+<th><strong>Milliamp Hours</strong></th>
+<th><strong>Voltage</strong></th>
+<th>瓦时</th>
+<th>发布日期</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>iphone 3GS</td>
+<td>1220 mAh</td>
+<td>3.7 V</td>
+<td>4.51 Wh</td>
+<td>June 19, 2009</td>
+</tr>
+<tr>
+<td>iphone 6</td>
+<td>1810 mAh</td>
+<td>3.82 V</td>
+<td>6.91 Wh</td>
+<td>September 19, 2014</td>
+</tr>
+<tr>
+<td>iphone X</td>
+<td>2716 mAh</td>
+<td>3.81 V</td>
+<td>10.35 Wh</td>
+<td>September 12, 2017</td>
+</tr>
+<tr>
+<td>iphone 12</td>
+<td>2815 mAh</td>
+<td>3.83 V</td>
+<td>10.78 Wh</td>
+<td>October 23, 2020</td>
+</tr>
+<tr>
+<td>Apple iPad Pro 10.5-inch</td>
+<td>8134 mAh</td>
+<td>3.77 V</td>
+<td>30.8 Wh</td>
+<td>June 13, 2017</td>
+</tr>
+<tr>
+<td>MacBook Pro 13” Retina</td>
+<td>6300 mAh</td>
+<td>11.4 V</td>
+<td>71.8 Wh</td>
+<td>Late 2013/Mid 2014</td>
+</tr>
+<tr>
+<td>MacBook Pro 15” Retina</td>
+<td>8440 mAh</td>
+<td>11.3 V</td>
+<td>95 Wh</td>
+<td>Late 2013-Mid 2014</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>Wh 瓦时，是电量单位，代表电能做功的量。</p>
+<p>mAh 毫安时，是电池容量单位，通常用作电池充放电指标。1440mAh，是指电荷量，代表指以1A的电流输出，则可以使用1.44小时。</p>
+<p>由 P＝U×I 可知 Wh＝V×mAh÷1000</p>
+</blockquote>
+<p>4400mAh，笔记本电池常见有11V左右电压，那么总做功就是4.4<em>11</em>3600=174240焦耳。</p>
+<p>3000mAh，手机电池电压是3.6V，那么总做功就是3<em>3.6</em>3600=38880焦耳。</p>
+<p>笔记本电池一般都是3串的，一串电压4.2V左右，三串4.2*3, 4400mAH指的是2并3串的容量，</p>
+<p>而手机电池3000mAH是一片电池的电压（4.2V-4.35V）的容量。</p>
+<p>我们以轻薄本中最常见的56Wh电池为例，工作电压7.6v，代入换算公式可知，该电池在7.6v的工作电压下，可以输出的电池电量为7368mAh。</p>
+<p>以手机中最常见的3500mAh电池为例，工作电压3.7v，代入换算公式可知，该电池在3.7v的工作电压下，可以输出的电能为12.95Wh。</p>
+<p>这也是为什么航空业都是采用Wh单位作为电池电量的依据。民航局规定，携带的电脑、充电宝等电子设备的电池电量不能超过100Wh，超过100Wh不超过160Wh需要经过航空公司批准，而160Wh的电池是绝对不能带上飞机的。</p>
+]]></content>
+  </entry>
 </search>
