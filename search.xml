@@ -281,7 +281,58 @@
 <h2 id="充电"><a href="#充电" class="headerlink" title="充电"></a>充电</h2><p>关于充电，作为一名新手要了解的信息相对还有点多，单独分开总结一篇。</p>
 <a href="/basic-knowledge-of-electric-car-charging/" title="上手电能汽车的基础知识">上手电能汽车的基础知识</a>
 
-<h2 id="最后"><a href="#最后" class="headerlink" title="最后"></a>最后</h2><p>使用我的引荐链接购买全新 Tesla，您可获得 1,500 公里的免费超级充电额度：</p>
+
+
+<h2 id="跑长途"><a href="#跑长途" class="headerlink" title="跑长途"></a>跑长途</h2><p>2021年4月清明节，跑了一次长途，北京至武汉来回，去武汉是工作日错开高峰，回北京是假期车较多，总结几点心得。</p>
+<ul>
+<li>高速上开启自动辅助驾驶要小心，当道路变窄时，特斯拉并不会智能变道，也不会减速停车。</li>
+<li>高速上有较多服务区提供充电桩，都是国家电网的，一般都是 4 个，里面可能有坏的，规划充电服务区的时候，一定要看准服务区有充电桩，电量最好留点余量（吃过闷亏）。</li>
+<li>一般有比较多的高速出入口附近有 Tesla 的超级充电站。</li>
+<li>国家电网的充电桩部分电桩有可能充不进电，如遇到换一个试试。</li>
+<li>国家电网的充电桩可能导致 tesla 电池管理系统限制充电，可能充到一半不再能充进去电（换电桩也没用），这时需要去 tesla 超级充电桩充一下就会修复好。</li>
+<li>跑高速一般在 100-110 km/h 左右最省电，超过 120 km/h 电耗明显增加。</li>
+<li>特斯拉非常依赖道路上的白线，如果发现白线异常一定要提前接管车辆驾驶。高速道路修整时，道路上一般会变成网格减速带，此时驶入特斯拉直接不再工作，会报警让人接管，但不会自动减速或刹车制动！</li>
+<li>开启自动辅助驾驶在高速行驶过程中，如果旁边车道的车压上白线可能会导致特斯拉自动开启紧急刹车制动！如果后面有车跟的比较紧，会很危险！如果发现旁边车道有车可能压白线时，一定要及时接管车辆驾驶。</li>
+</ul>
+<h2 id="用车感受"><a href="#用车感受" class="headerlink" title="用车感受"></a>用车感受</h2><p>Telsa 对新手其实不太友好。</p>
+<p>自动辅助驾驶在某些情况下并不完全智能，如高速道路施工，道路突然变窄，特斯拉并不一定会自动刹车。自动辅助驾驶能解决绝大部分车道白线清晰道路的驾驶，容易让人放松警惕，在不熟悉的道路上如遇极端路况可能会反应不过来。</p>
+<p>特斯拉是怀挡操作，连续拨两次进入自动辅助驾驶，拨一次进入定速巡航模式。有一定的失误操作概率，如果误把定速巡航状态当做自动辅助驾驶状态有一定的危险概率，尤其是在高速行驶启用时。显示面板其实有提示，但没人指导，自己探索习得，个人判断需要对智能操作系统有较高的使用经验可能才行。</p>
+<p>特斯拉的动能回收机制，正常工作时有一定的刹车效果，容易让新手产生依赖，如依赖过度放松刹车的使用可能比较危险。其实它的工作是不稳定的，有可能减弱或失效。温度过低时，电池活性低，动能回收转化效率太低可能会导致该功能失效。电池充电过足，动能回收也可能减弱或消失。</p>
+<h2 id="快速链接"><a href="#快速链接" class="headerlink" title="快速链接"></a>快速链接</h2><ul>
+<li>MODEL 3 使用手册地址：<a href="https://www.tesla.cn/sites/default/files/model_3_owners_manual_asia_cn.pdf">https://www.tesla.cn/sites/default/files/model_3_owners_manual_asia_cn.pdf</a></li>
+<li>MODEL Y 使用手册地址：<a href="https://www.tesla.cn/sites/default/files/model_y_owners_manual_asia_cn.pdf">https://www.tesla.cn/sites/default/files/model_y_owners_manual_asia_cn.pdf</a></li>
+<li>DIY操作指南: <a href="https://www.tesla.cn/support/do-it-yourself-guides%EF%BC%88%E4%BB%A5%E4%B8%8B%E4%B8%BA">https://www.tesla.cn/support/do-it-yourself-guides（以下为</a> MODEL 3 DIY 内容）<ul>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#restarting-touchscreen">重新启动触摸屏</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#pair-phone">蓝牙手机配对</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#connect-wi-fi">连接至 Wi-Fi</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#homelink">HomeLink®编程</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#adding-removing-keys">添加和移除钥匙</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#app-unlock-and-start">使用 Tesla 手机应用程序解锁和启动车辆</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#key-fob-battery">更换遥控钥匙电池</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#phone-charging-cable">安装手机充电电缆</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#license-plate-installation">安装前车牌架</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#replace-air-filter">空调滤清器的更换</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#removing-rocks">清除刹车盘背板内的石块或杂物</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#burnishing-brakes">拋光制动器</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#tire-pressure">检查和调节胎压</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#calibrate-cameras">驾驶以校准摄像头</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#hood-strut">前备箱支柱的更换</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#trunk-strut">后备箱支柱的更换</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#windshield-fluid">加注挡风玻璃清洗液</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#replacing-wiper-blades">更换雨刮器片</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#release-charge-cable">手动释放充电电缆</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#calibrating-windows">校准车窗</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#hood-no-power">在无电的情况下打开前备箱盖</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#jump-start-12v">跳线跨接启动 12V 电池</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#aero-covers">轮毂盖的拆卸与安装</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#lug-nut-covers">拆卸和安装轮毂螺母保护帽</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#charge-port-status">充电端口状态指示灯</a></li>
+<li><a href="https://www.tesla.cn/support/do-it-yourself-model-3#gen-2-mobile-connector-status">第二代移动连接器状态指示灯</a></li>
+</ul>
+</li>
+</ul>
+<hr>
+<p>使用我的引荐链接购买全新 Tesla，我和您均可获得 1,500 公里的免费超级充电额度：</p>
 <p><a href="https://www.tesla.cn/referral/i96646">https://www.tesla.cn/referral/i96646</a></p>
 ]]></content>
       <categories>
