@@ -353,6 +353,8 @@
 <ul>
 <li><p>博主从事互联网行业，后端研发工程岗，博客内容可能涵盖生活、工作、学习、总结、兴趣、运动等。</p>
 </li>
+<li><p>知道、涉猎知识点并不算什么，结构化系统的深入学习和思考，从而融会贯通，正确熟练使用，方能体现知识广度的威力。</p>
+</li>
 <li><p>部分文章会保持长期更新。包括丰富内容，完善逻辑，纠正错误等。</p>
 </li>
 </ul>
@@ -475,6 +477,108 @@
 <p>我们以轻薄本中最常见的56Wh电池为例，工作电压7.6v，代入换算公式可知，该电池在7.6v的工作电压下，可以输出的电池电量为7368mAh。</p>
 <p>以手机中最常见的3500mAh电池为例，工作电压3.7v，代入换算公式可知，该电池在3.7v的工作电压下，可以输出的电能为12.95Wh。</p>
 <p>这也是为什么航空业都是采用Wh单位作为电池电量的依据。民航局规定，携带的电脑、充电宝等电子设备的电池电量不能超过100Wh，超过100Wh不超过160Wh需要经过航空公司批准，而160Wh的电池是绝对不能带上飞机的。</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>合理评估准确性的一些指标</title>
+    <url>/evaluate-the-accuracy-of-a-service-appropriate/</url>
+    <content><![CDATA[<p>评估搜索、推荐系统的质量，分类、聚类算法的效果，预测服务的表现等类似问题，在行业内有一套比较科学的方法，也广泛应用于机器学习领域。</p>
+<a id="more"></a>
+
+<h2 id="混淆矩阵（confusion-matrix）"><a href="#混淆矩阵（confusion-matrix）" class="headerlink" title="混淆矩阵（confusion matrix）"></a>混淆矩阵（confusion matrix）</h2><p>假设有 12 张图片，1 代表猫，0 代表狗。使用程序识别图片上的猫狗，识别结果为</p>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>NO.1</th>
+<th>NO.2</th>
+<th>NO.3</th>
+<th>NO.4</th>
+<th>NO.5</th>
+<th>NO.6</th>
+<th>NO.7</th>
+<th>NO.8</th>
+<th>NO.9</th>
+<th>NO.10</th>
+<th>NO.11</th>
+<th>NO.12</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>实际（actual ）</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>预测（prediction ）</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+</tbody></table>
+<p>结果可分为 4 情况：</p>
+<table>
+<thead>
+<tr>
+<th>表示</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>TP（True Positive）</td>
+<td>实际为猫，识别为猫</td>
+</tr>
+<tr>
+<td>TN（True Negative）</td>
+<td>实际不是猫，识别为猫</td>
+</tr>
+<tr>
+<td>FN（False Negative）</td>
+<td>实际是猫，识别为不是猫</td>
+</tr>
+<tr>
+<td>FN（False Negative）</td>
+<td>实际不是猫，识别为不是猫</td>
+</tr>
+</tbody></table>
+<p>T/F：程序判断对不对</p>
+<p>P/N：程序判断是不是</p>
+<h2 id="准确率（accuracy）"><a href="#准确率（accuracy）" class="headerlink" title="准确率（accuracy）"></a>准确率（accuracy）</h2><p>评估猫狗识别程序的好坏，往往最容易想到的评测指标就是准确率（预测正确的结果占总样本的百分比）。</p>
+<p>$$accuracy(ACC) = \frac{TP + TN}{TP + TN + FP + FN}$$</p>
+<p>当测试样本分布偏差较大时，该指标容易造成结果失真。</p>
+<p>假设有 100 个测试样本，其中 99 个为真，1 个为假。识别程序刚好故障，所有情况全返回为真，那准确率直接表现为 99%，显然不合理。</p>
+<h2 id="精准率（precision）召回率（recall）"><a href="#精准率（precision）召回率（recall）" class="headerlink" title="精准率（precision）召回率（recall）"></a>精准率（precision）召回率（recall）</h2><p>因为准确率指标的问题，衍生发展出精准率和召回率。</p>
+<blockquote>
+<p>另一种翻译可能更直观： precision - 查准率，recall - 查全率</p>
+</blockquote>
+<p><strong>概念讲解直接看 wikipedia 即可，讲的非常清楚。</strong> <a href="https://en.wikipedia.org/wiki/Precision_and_recall">https://en.wikipedia.org/wiki/Precision_and_recall</a></p>
+<p>直接上图&amp;公式</p>
+<img src="https://img.ifnnn.cn/d5fd11c3f37fd43a77699c0fc8650da4.png?imageView2/2/w/640" class="" width="300">
+
+<p>$$\text{precision}=\frac{|{\text{relevant documents}}\cap{\text{retrieved documents}}|}{|{\text{retrieved documents}}|}=\frac{TP}{TP + FP}$$</p>
+<p>$$\text{recall}=\frac{|{\text{relevant documents}}\cap{\text{retrieved documents}}|}{|{\text{relevant documents}}|}=\frac{TP}{TP + FN}$$</p>
+<h2 id="F1"><a href="#F1" class="headerlink" title="F1"></a>F1</h2><p>P 和 R 一般比较难平衡，只看 P 或 只看 R 均是不合理的做法。</p>
+<p>为了避免只谈单一指标，同时平衡体现 P 和 R 的效果，于是引入 F-measure 指标（简称 F1 score）：</p>
+<p>$$F= 2 * \frac{precision*recall} {precision+recall}$$</p>
 ]]></content>
   </entry>
 </search>
