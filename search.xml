@@ -347,7 +347,16 @@
   <entry>
     <title>欢迎来到我的博客</title>
     <url>/welcome/</url>
-    <content><![CDATA[]]></content>
+    <content><![CDATA[<p>一些简单说明，方便快速全局了解本站内容。</p>
+<a id="more"></a>
+
+<ul>
+<li><p>博主从事互联网行业，后端研发工程岗，博客内容可能涵盖生活、工作、学习、总结、兴趣、运动等。</p>
+</li>
+<li><p>部分文章会保持长期更新。包括丰富内容，完善逻辑，纠正错误等。</p>
+</li>
+</ul>
+]]></content>
   </entry>
   <entry>
     <title>常用电子设备电池相关基础知识</title>
