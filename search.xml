@@ -549,15 +549,15 @@
 </tr>
 <tr>
 <td>TN（True Negative）</td>
-<td>实际不是猫，识别为猫</td>
+<td>实际不是猫，识别不是猫</td>
+</tr>
+<tr>
+<td>FP（False Positive）</td>
+<td>实际不是猫，识别是猫</td>
 </tr>
 <tr>
 <td>FN（False Negative）</td>
 <td>实际是猫，识别为不是猫</td>
-</tr>
-<tr>
-<td>FN（False Negative）</td>
-<td>实际不是猫，识别为不是猫</td>
 </tr>
 </tbody></table>
 <p>T/F：程序判断对不对</p>
